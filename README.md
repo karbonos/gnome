@@ -6,7 +6,7 @@ Contributions are welcome
 
 #### 1. Clone it
 
-    # git clone git@github.com/NuTyX/gnome.git
+    # git clone git://github.com/NuTyX/gnome.git
 
 #### 2. adjust /etc/cards by adding the ports directory. By default it should be:
 
@@ -30,7 +30,7 @@ This method means you have ALL the binaries of the base,console and desktop coll
 
 ###### 4.2.1 build a list of package to build
 
-    # bash gnome/scritps/gnome|cut -d " " -f1 > list
+    # bash gnome/scripts/gnome|cut -d " " -f1 > list
 
 ###### 4.2.2 build each package per level
 
