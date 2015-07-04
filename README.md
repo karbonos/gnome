@@ -8,7 +8,7 @@ Contributions are welcome
 
     # git clone git://github.com/NuTyX/gnome.git
 
-#### 2. adjust /etc/cards by adding the ports directory. By default it should be:
+#### 2. adjust /etc/cards.conf by adding the ports directory. By default it should be:
 
       dir /var/lib/pkg/saravane/gnome
 
