@@ -6,13 +6,11 @@
 
 
 name=network-manager-applet
-version=1.0.2
+version=1.0.4
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/${name}/${version%.*}/${name}-$version.tar.xz)
  
 build() {
-mkdir -p nma/etc/xdg nma/usr/bin \
-    nma/usr/share/{applications,icons/hicolor/22x22/apps,man/man1,nm-applet}
 cd $name-$version
 ./configure --prefix=/usr --sysconfdir=/etc \
       --localstatedir=/var \
@@ -21,7 +19,6 @@ cd $name-$version
       --disable-maintainer-mode \
       --disable-migration \
       --with-modem-manager-1
-#sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 make
 make DESTDIR=$PKG install
 }
