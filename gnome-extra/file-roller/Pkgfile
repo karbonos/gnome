@@ -4,7 +4,7 @@
 # Depends on: desktop-file-utils,gtk3,hicolor-icon-theme,dconf,libarchive,file,json-glib,libnotify,p7zip
 
 name=file-roller
-version=3.16.2
+version=3.16.3
 release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
@@ -12,7 +12,7 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$versi
 build() {
 cd $name-$version
 	 ./configure --prefix=/usr --sysconfdir=/etc \
-      --libexecdir=/usr/lib/file-roller \
+      --libexecdir=/usr/lib/$name \
       --localstatedir=/var --disable-static \
       --disable-schemas-compile
 	make
