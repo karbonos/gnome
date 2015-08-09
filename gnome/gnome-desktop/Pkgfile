@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: git.gnome.org/brownse/gnome-gnome/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: iso-codes, xorg-app,gtk3,docbook-xml, gnome-doc-utils, gsettings-desktop-schemas, gobject-introspection, startup-notification, yelp-xsl, xorg-xkeyboard-config
+# Depends on: iso-codes, xorg-app,gtk3,docbook-xml, gnome-doc-utils, gsettings-desktop-schemas, gobject-introspection, startup-notification, xorg-xkeyboard-config
 
 name=gnome-desktop
 version=3.16.2
