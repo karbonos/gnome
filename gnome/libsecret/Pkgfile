@@ -2,11 +2,11 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: intltool, libxslt, docbook-xsl, glib, gobject-introspection, libgcrypt, vala
-
+# Depends on: intltool, libxslt, docbook-xsl, glib, gobject-introspection, libgcrypt, vala, gnome-keyring
+run=(gnome-keyring)
 
 name=libsecret
-version=0.18.2
+version=0.18.3
 release=1
 source=( http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
