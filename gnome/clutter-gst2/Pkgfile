@@ -5,7 +5,7 @@
 
 name=clutter-gst2
 _name=clutter-gst
-version=2.0.14
+version=2.0.16
 release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/${_name}/${version%.*}/${_name}-$version.tar.xz)
