@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: git.gnome.org/brownse/gnome-themes-standard/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk, gtk3, intltool, librsvg
+# Depends on: gtk2, gtk3, intltool, librsvg
 
 name=gnome-themes-standard
 version=3.16.2
