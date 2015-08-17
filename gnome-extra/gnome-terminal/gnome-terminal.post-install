@@ -1,4 +1,1 @@
- glib-compile-schemas /usr/share/glib-2.0/schemas
-if [ -f /usr/share/gconf/schemas/gnome-terminal.schemas ]; then
-    gconfpkg --uninstall gnome-terminal
-  fi
+glib-compile-schemas usr/share/glib-2.0/schemas > /dev/null 2>&1

@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: git.gnome.org/brownse/gnome-terminal/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: desktop-file-utils, dconf, gconf, gtk, gnome-doc-utils, gsettings-desktop-schemas, vte3, yelp-xsl, rarian, gnome-shell
+# Depends on: desktop-file-utils, dconf, gconf, gtk3, gnome-doc-utils, gsettings-desktop-schemas, vte3, yelp-xsl, rarian, nautilus
 
 name=gnome-terminal
 version=3.16.2
@@ -11,8 +11,10 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
-    --libexecdir=/usr/lib/$name --disable-static --with-nautilus-extension
+./configure --prefix=/usr \
+    --disable-static --disable-migration --disable-search-provider
 make
 make DESTDIR=$PKG install
+sed -e 's/System/Utility/' \
+    -i $PKG/usr/share/applications/gnome-terminal.desktop
 }
