@@ -12,7 +12,7 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-./configure --prefix=/usr 
+./configure --prefix=/usr \
     --sysconfdir=/etc \
     --enable-introspection \
     --enable-egl-backend \
