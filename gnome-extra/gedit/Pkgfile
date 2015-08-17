@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: git.gnome.org/brownse/gedit/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3, gsettings-desktop-schemas, gtksourceview, libpeas, yelp-xsl, enchant, iso-codes, libsoup, libzeitgeist, python-gobject, python3
+# Depends on: gtk3, gsettings-desktop-schemas, gtksourceview3, libpeas, yelp-xsl, enchant, iso-codes, libsoup, libzeitgeist, python-gobject, python3
 
 name=gedit
 version=3.16.3
