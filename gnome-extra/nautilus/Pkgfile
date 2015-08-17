@@ -12,7 +12,6 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 build() {
 cd $name-$version
 ./configure --prefix=/usr --sysconfdir=/etc \
---libexecdir=/usr/lib/$name --disable-nst-extension \
 --disable-packagekit --disable-tracker --disable-update-mimedb \
 --disable-schemas-compile
 make
