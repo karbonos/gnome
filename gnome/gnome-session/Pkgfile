@@ -1,9 +1,10 @@
-# Description: Contient le gestionnaire de session de GNOME.
+# Description: The GNOME Session Handler
 # URL: http://www.gnome.org/
 # Maintainer: git.gnome.org/brownse/gnome-session/
-# Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg-libsm, gconf, gtk3, json-glib, startup-notification, upower, xmlto, consolekit, gnome-desktop
-# Run on: xorg-libsm,gconf,gtk3,json-glib,startup-notification,upower,xmlto,consolekit,gtk-update-icon-cache,gnome-desktop
+# Packager: tnut at nutyx dot org
+# Depends on: hicolor-icon-theme gnome-desktop json-glib consolekit
+
+run=(hicolor-icon-theme consolekit)
 
 name=gnome-session
 version=3.16.0
