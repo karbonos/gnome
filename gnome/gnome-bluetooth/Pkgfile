@@ -2,8 +2,9 @@
 # URL: http://www.gnome.org/
 # Maintainer: git.gnome.org/brownse/gnome-bluetooth/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: intltool, gnome-doc-utils, libnotify, gobject-introspection, bluez, consolekit, obexd
+# Depends on: eudev hicolor-icon-theme intltool, gnome-doc-utils, libnotify, gobject-introspection, bluez, consolekit, obexd
 
+run=(hicolor-icon-theme bluez libnotify gtk3)
 name=gnome-bluetooth
 version=3.16.1
 release=1
