@@ -53,7 +53,7 @@ Contributions are welcome
     # bash enter-chroot
     # cd /root/gnome
 
-#### 10. you can now try the following command:
+#### 10. You can now try the following command:
 
     # bash scripts/gnome
 
@@ -64,6 +64,6 @@ It will print a help included point 1,7 and 8 above. Note that it's even possibl
 
     # cards level
 
-#### 12. TO BE CONTINUE ...
+#### 12. TO BE CONTINUED ...
 
 Have fun :)
