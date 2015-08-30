@@ -60,7 +60,7 @@ Contributions are welcome
 It will print a help included point 1,7 and 8 above. Note that it's even possible to get the available binaries from the mirror.
 
 
-#### 11. If everythin OK, check with cards level whats new
+#### 11. If everything is OK, check with cards level whats new
 
     # cards level
 
