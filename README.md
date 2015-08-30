@@ -55,7 +55,7 @@ Contributions are welcome
 
 #### 10. you can now try the following command:
 
-    # bash script/gnome
+    # bash scripts/gnome
 
 It will print a help included point 1,7 and 8 above. Note that it's even possible to get the available binaries from the mirror.
 
