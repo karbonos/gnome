@@ -83,7 +83,7 @@ It will explain you what's a collection, a git, a port, the tools around 'cards'
 
  then you are ready to compile the 'gnome-extra' collection
 
-    # cd /root/gnome-extra
+    # cd /root/gnome
     # bash scripts/gnome-extra -s
     # bash scripts/gnome-extra -a 
 
