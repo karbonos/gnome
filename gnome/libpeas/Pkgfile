@@ -1,8 +1,8 @@
 # Description: A GObject-based plugins engine.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/browse/libpeas/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3, gjs, vala, seed, gobject-introspection, python-gobject
+# Depends on: gdb, gtk3, gjs, vala, gobject-introspection, python-gobject2, python-gobject, lua, valgrind
 
 
 name=libpeas
@@ -12,8 +12,7 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
-#sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+./configure --prefix=/usr
 make
 make DESTDIR=$PKG install
 }
