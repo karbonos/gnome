@@ -1,19 +1,17 @@
 # Description:	A unit testing framework for C
-# URL:		http://check.sourceforge.net/
-# Packager: fanch at nutyx dot org
+# URL:	http://check.sourceforge.net/
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
 # Depends on:	
 
 name=check
-version=0.9.14
+version=0.10.0
 release=1
 source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
 
 build () {
 	cd $name-$version
-	./configure \
-		--prefix=/usr \
-		--mandir=/usr/man
+    ./configure --prefix=/usr --disable-static
 	make
 	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/share/{doc,info}
 }
