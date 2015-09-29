@@ -1,14 +1,14 @@
 # Description: Simple scanning utility.
 # URL: https://launchpad.net/simple-scan/
-# Maintainer: N.A.
-# Packager: lesibel at free dot fr
-# Depends on: gtk3,colord,itstool,yelp,sane,dconf,intltool, gnome-doc-utils, xorg-libxcursor, xorg-libxdamage, xorg-libxrandr, xorg-libxinerama
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk3 colord itstool yelp sane dconf intltool gnome-doc-utils xorg-libxcursor xorg-libxdamage xorg-libxrandr xorg-libxinerama
 
 
 name=simple-scan
 version=3.16.2
 release=1
-source=(https://launchpad.net/$name/${version:0:4}/$pkgver/+download/$name-$version.tar.xz)
+source=(https://launchpad.net/$name/${version:0:4}/$version/+download/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
