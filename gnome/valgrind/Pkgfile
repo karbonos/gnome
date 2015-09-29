@@ -1,0 +1,23 @@
+# Description: an instrumentation framework for building dynamic analysis tools. 
+# URL: http://valgrind.org
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: boost llvm gdb libxslt
+
+name=valgrind
+version=3.10.1
+release=1
+source=(http://valgrind.org/downloads/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	sed -e 's#|3.\*#&|4.\*#' \
+    -e 's/-mt//g'        \
+    -e 's/2\.20)/2.2[0-9])/' \
+    -i configure         
+	sed -i 's|/doc/valgrind||' docs/Makefile.in 
+	./configure --prefix=/usr \
+            --datadir=/usr/share/doc/$name-$version
+	make
+	make DESTDIR=$PKG install
+}
