@@ -1,8 +1,8 @@
 # Description: GNOME Password Management daemon. 
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/gnome-keyring/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus, gcr, pam
+# Depends on: dbus gcr pam libxslt libcap-ng gnupg openssh valgrind
 
 name=gnome-keyring
 version=3.16.0
@@ -11,11 +11,9 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-./configure --prefix=/usr --sysconfdir=/etc \
-      --localstatedir=/var --disable-static \
-      --libexecdir=/usr/lib/gnome-keyring \
-      --with-pam-dir=/usr/lib/security --with-root-certs=/etc/ssl/certs \
-      --disable-schemas-compile
+./configure --prefix=/usr     \
+            --sysconfdir=/etc \
+            --with-pam-dir=/lib/security 
 make
 make DESTDIR=$PKG install
 }
