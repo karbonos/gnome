@@ -1,8 +1,8 @@
 # Description: PGP encryption and signing for nautilus.
 # URL: http://www.gnome.org/
-# Maintainer: NuTyX GNOME team
-# Packager: piernov <piernov@piernov.org>
-# Depends on: gtk3, libcryptui, dbus-glib, gnome-keyring, gconf, gpgme, nautilus, libnotify, seahorse
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk3 libcryptui dbus-glib gnome-keyring gconf gnupg gpgme nautilus libnotify seahorse
 
 name=seahorse-nautilus
 version=3.11.92
@@ -11,8 +11,8 @@ source=(http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar
 
 build() {
 	cd $name-$version
-	 ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
-              --disable-static --disable-schemas-compile --disable-gpg-check
+	sed -i "s@1.2 1.4 2.0@1.2 1.4 2.0 2.1@" configure
+	 ./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }
