@@ -1,9 +1,9 @@
 # Description: Common macros pour GNOME 3 (GIT Version)
 # URL: http://www.gnome.org
-# Maintainer: NuTyX GNOME team
-# Packager: piernov <piernov@piernov.org>
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: 
-# Run on: 
+ 
 
 name=gnome-common
 version=3.14.0
