@@ -1,7 +1,7 @@
-# Description: Provides word-processor-style highlighting and replacement of misspelled words in a GtkTextView widget
+# Description: Provides word-processor-style highlighting and replacement of misspelled words in a GtkTextView widget.
 # URL: http://gtkspell.sourceforge.net/
-# Maintainer: NuTyX Core team
-# Packager: fanch <fanch@nutyx.org>
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: gtk3, enchant
 
 name=gtkspell
