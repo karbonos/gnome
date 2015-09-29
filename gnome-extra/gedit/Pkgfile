@@ -1,8 +1,8 @@
 # Description: A text editor for GNOME
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/gedit/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3, gsettings-desktop-schemas, gtksourceview3, libpeas, yelp-xsl, enchant, iso-codes, libsoup, libzeitgeist, python-gobject, python3
+# Depends on: enchant gtk3 gsettings-desktop-schemas gtksourceview3 gvfs libpeas yelp-xsl enchant iso-codes libsoup libzeitgeist python-gobject python3
 
 name=gedit
 version=3.16.3
@@ -11,11 +11,7 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-./configure --prefix=/usr \
---libexecdir=/usr/lib \
---disable-updater \
---disable-schemas-compile \
---enable-python
+./configure --prefix=/usr
 make
 make DESTDIR=$PKG install
 }
