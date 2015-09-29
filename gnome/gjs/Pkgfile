@@ -1,8 +1,8 @@
 # Description: Javascript Bindings for GNOME
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/gnome-js-common/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cairo, dbus-glib, gobject-introspection, js24, xorg-libxxf86vm
+# Depends on: cairo dbus-glib gobject-introspection js24 xorg-libxxf86vm
 
 name=gjs
 version=1.43.3
@@ -11,7 +11,7 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-./configure --prefix=/usr --disable-static --libexecdir=/usr/lib
+./configure --prefix=/usr 
 make
 make DESTDIR=$PKG install
 }
