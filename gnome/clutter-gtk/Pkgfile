@@ -1,8 +1,8 @@
 # Description: GTK clutter widget. 
 # URL: http://www.clutter-project.org
-# Maintainer: NutyX core team
-# Packager: piernov <piernov@piernov.org>
-# Depends on: clutter
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: clutter gtk3 gobject-introspection
 
 
 name=clutter-gtk
