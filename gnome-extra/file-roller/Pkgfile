@@ -1,7 +1,8 @@
 # Description: Create and modify archives
 # URL: http://www.gnome.org
-# Packager: fanch at nutyx dot org
-# Depends on: desktop-file-utils,gtk3,hicolor-icon-theme,dconf,libarchive,file,json-glib,libnotify,p7zip
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: desktop-file-utils gtk3 hicolor-icon-theme dconf itstool libarchive file json-glib1 libnotify unrar p7zip
 
 name=file-roller
 version=3.16.3
@@ -11,10 +12,10 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$versi
 
 build() {
 cd $name-$version
-	 ./configure --prefix=/usr --sysconfdir=/etc \
-      --libexecdir=/usr/lib/$name \
-      --localstatedir=/var --disable-static \
-      --disable-schemas-compile
+	./configure --prefix=/usr         \
+            --disable-packagekit  \
+            --disable-static
 	make
 	make DESTDIR=$PKG install
+chmod -v 0755 $PKG/usr/libexec/file-roller/isoinfo.sh
 }
