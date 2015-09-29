@@ -1,0 +1,20 @@
+# Description: Client-side application which queries directory service
+# URL: URL: http://ftp.debian.org/debian/pool/main/w/whois
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libidn
+
+name=whois
+version=5.2.10
+release=1
+
+source=(ftp://ftp.debian.org/debian/pool/main/w/$name/${name}_$version.tar.xz)
+
+
+build() {
+cd $name-$version
+make prefix=/usr 
+make prefix=/usr BASEDIR=$PKG install-whois
+make prefix=/usr BASEDIR=$PKG install-mkpasswd
+make prefix=/usr BASEDIR=$PKG install-pos
+}
