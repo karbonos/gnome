@@ -1,9 +1,9 @@
 # Description: MBIM modem protocol helper library
 # URL: http://www.freedesktop.org/wiki/Software/libmbim/
-# Maintainer: NutyX core team
-# Packager: facnh <piernov@piernov.org>
-# Depends on: glib
-# Run on: glib
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libgudev
+
 
 name=libmbim
 version=1.12.2
@@ -12,9 +12,8 @@ release=1
 source=(http://www.freedesktop.org/software/$name/$name-$version.tar.xz)
 build() {
 	cd $name-$version
-	./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
-    --libexecdir=/usr/lib/$name --disable-static
-  make
+	./configure --prefix=/usr --disable-static
+	make
 	make
 	make DESTDIR=$PKG install
 }
