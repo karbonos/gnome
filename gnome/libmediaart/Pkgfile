@@ -1,6 +1,7 @@
 # Description: Library tasked with managing, extracting and handling media art caches
 # URL: https://github.com/curlybeast/libmediaart
-# Packager: fanch at nutyx dot org
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: gdk-pixbuf
 
 
