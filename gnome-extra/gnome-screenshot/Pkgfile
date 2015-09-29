@@ -1,8 +1,8 @@
 # Description: Take pictures of your screen.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/gnome-screenshot/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3, libcanberra
+# Depends on: gtk3 libcanberra
 
 
 name=gnome-screenshot
