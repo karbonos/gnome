@@ -1,8 +1,8 @@
 # Description: Document viewer pdf, Postscript, DjVu, Tiff, DVI.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/evince/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3, gnome-icon-theme, gsettings-desktop-schemas, yelp-xsl, gobject-introspection, libgnome-keyring, nautilus, poppler-glib,adwaita-icon-theme
+# Depends on: adwaita-icon-theme gtk3 gnome-icon-theme gsettings-desktop-schemas itstool yelp-xsl gobject-introspection libgnome-keyring nautilus poppler-glib
 
 name=evince
 version=3.16.1
@@ -11,14 +11,9 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-./configure --prefix=/usr   --sysconfdir=/etc \
-      --localstatedir=/var    --libexecdir=/usr/lib/evince \
-      --disable-static        --enable-nautilus \
-      --enable-pdf            --enable-tiff \
-      --enable-djvu           --enable-dvi \
-      --enable-t1lib          --enable-comics \
-      --disable-scrollkeeper  --disable-schemas-compile \
-      --enable-introspection --disable-browser-plugin
+./configure --prefix=/usr           \
+            --enable-introspection  \
+            --disable-static 
 make
 make DESTDIR=$PKG install
 }
