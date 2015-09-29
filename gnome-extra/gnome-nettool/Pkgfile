@@ -1,0 +1,17 @@
+# Description: a network information tool which provides GUI interface for some of the most common command line network tools.
+# URL: http://www.gnome.org/
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk3 itstool libgtop vala bind nmap traceroute net-tool-cvs whois
+
+name=gnome-nettool
+version=3.8.1
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr 
+make
+make DESTDIR=$PKG install
+}
