@@ -1,8 +1,8 @@
 # Description: GNOME Scientific calculator.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/gnome-bluetooth/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3 itstool
+# Depends on: gtksourceview3 gtk3 itstool vala
 
 name=gnome-calculator
 version=3.16.2
@@ -11,8 +11,7 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-./configure --prefix=/usr --sysconfdir=/etc --disable-schemas-compile \
-      --localstatedir=/var --libexecdir=/usr/lib/gnome-calculator
+./configure --prefix=/usr 
 make
 make DESTDIR=$PKG install
 }
