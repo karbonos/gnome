@@ -1,7 +1,8 @@
 # Description: GStreamer bindings for clutter
-# Maintainer: NutyX core team
-# Packager: piernov <piernov@piernov.org>
-# Depends on: gtk3, clutter, gstreamer1-plugins-base, gobject-introspection
+# URL: http://www.gnome.org/
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk3 clutter gstreamer1-plugins-base gobject-introspection
 
 name=clutter-gst
 version=3.0.8
@@ -11,8 +12,7 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-./configure --prefix=/usr \
---sysconfdir=/etc
+./configure --prefix=/usr 
 make
 make DESTDIR=$PKG install
 }
