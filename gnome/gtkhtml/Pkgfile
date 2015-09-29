@@ -1,0 +1,17 @@
+# Description: The GtkHTML package contains a lightweight HTML rendering/printing/editing engine.
+# URL: http://www.gnome.org/
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: enchant gsettings-desktop-schemas gtk3 iso-codes libsoup
+
+name=gtkhtml
+version=4.8.5
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr 
+make
+make DESTDIR=$PKG install
+}
