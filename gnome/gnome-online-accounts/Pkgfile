@@ -1,0 +1,17 @@
+# Description: GNOME service to access online accounts.
+# URL: http://www.gnome.org/
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gcr libgnome-keyring libnotify librest libsecret json-glib1 docbook-xsl gobject-introspection webkit2gtk3 telepathy-glib
+
+name=gnome-online-accounts
+version=3.16.2
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/${name}/${version%.*}/${name}-$version.tar.xz) 
+
+build() {
+cd $name-$version
+./configure --prefix=/usr --disable-static 
+make
+make -j1 DESTDIR=$PKG install
+}
