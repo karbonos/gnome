@@ -1,0 +1,19 @@
+# Description: Utility for network discovery and security auditing
+# URL: http://insecure.org/nmap/
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: pcre libpcap lua liblinear 
+
+name=nmap
+version=6.47
+release=1
+
+source=(http://nmap.org/dist/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr --with-liblua=included
+make -j1
+sed -i 's/lib./lib/' zenmap/test/run_tests.py
+make DESTDIR=$PKG install
+}
