@@ -1,8 +1,8 @@
-# Description: Librairies de gnome libgnomeui
+# Description: Gucharmap is a Unicode character map and font viewer.
 # URL: http://www.gnome.org/
-# Maintainer: NuTyX GNOME team
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3, perl-xml-parser, gconf, gnome-doc-utils
+# Depends on: desktop-file-utils gtk3 itstool gobject-introspection vala
 
 
 name=gucharmap
@@ -12,9 +12,7 @@ source=(http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar
 
 build() {
         cd $name-$version
-	./configure --prefix=/usr --sysconfdir=/etc \
-      --localstatedir=/var --disable-static \
-      --disable-schemas-compile  --enable-introspection
+	./configure --prefix=/usr --enable-vala
         make
         make DESTDIR=$PKG install
 }
