@@ -1,8 +1,8 @@
 # Description: GNOME icon theme, symbolic icons.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/gnome-icon-theme-symbolic/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3, icon-naming-utils
+# Depends on: gnome-icon-theme
 
 name=gnome-icon-theme-symbolic
 version=3.12.0
@@ -11,7 +11,7 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-GTK_UPDATE_ICON_CACHE=/bin/true ./configure --prefix=/usr
+./configure --prefix=/usr
 make
 make DESTDIR=$PKG install
 }
