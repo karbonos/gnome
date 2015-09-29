@@ -1,8 +1,8 @@
 # Description: Geocode Helper library
 # URL: http://geoclue.freedesktop.org/
-# Maintainer: NutyX Gnome team
-# Packager: piernov <piernov@piernov.org>
-# Depends on: json-glib, libsoup, gobject-introspection, gnome-doc-utils
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: json-glib1 libsoup gobject-introspection gtk-doc
 
 
 name=geocode-glib
