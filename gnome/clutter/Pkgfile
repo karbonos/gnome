@@ -1,9 +1,9 @@
 # Description: A GObject based library for creating fast, visually rich graphical user interfaces.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/clutter/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: atk, cogl, json-glib, gobject-introspection, gtk3
-# Run on:  atk,cogl,json-glib,xorg-libxi,gtk3
+# Depends on: atk cogl json-glib1 gobject-introspection gtk3 xorg-libxi
+
 
 name=clutter
 version=1.22.4
@@ -13,10 +13,7 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 build() {
 cd $name-$version
 ./configure --prefix=/usr \
-    --sysconfdir=/etc \
-    --enable-introspection \
-    --enable-egl-backend \
-    --enable-gdk-backend 
+	--sysconfdir=/etc 	
 make
 make DESTDIR=$PKG install
 }
