@@ -1,7 +1,8 @@
 # Description: Adwaita icon theme. 
 # URL: http://www.gnome.org/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: hicolor-icon-theme,gtk-update-icon-cache librsvg
+# Depends on: gtk2 gtk3 git librsvg inkscape
 
 
 name=adwaita-icon-theme
