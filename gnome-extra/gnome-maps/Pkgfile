@@ -1,0 +1,18 @@
+# Description: GNOME Maps is a map application for GNOME.
+# URL: http://www.gnome.org/
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: clutter-gtk geoclue2 geocode-glib gjs libchamplain libgee folks gfbgraph
+
+
+name=gnome-maps
+version=3.16.2
+release=1
+source=(http://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr 
+make
+make DESTDIR=$PKG install
+}
