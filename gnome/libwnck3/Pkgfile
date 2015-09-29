@@ -1,8 +1,8 @@
 # Description: Window Navigator Construction Kit (GTK+3).
 # URL: http://www.gnome.org/
-# Maintainer: NuTyX core team
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3, perl-xml-parser, xorg-libxt, xorg-libxres, startup-notification, xorg-libxinerama, xorg-libxrandr, xorg-libxcursor, xorg-libxdamage
+# Depends on: gtk3 perl-xml-parser xorg-libxt xorg-libxres startup-notification xorg-libxinerama xorg-libxrandr xorg-libxcursor xorg-libxdamage
 
 
 name=libwnck3
@@ -12,8 +12,7 @@ source=(http://ftp.gnome.org/pub/gnome/sources/${name%3}/${version%.*}/${name%3}
 
 build() {
 	cd ${name%3}-$version
-	./configure --prefix=/usr --sysconfdir=/etc \
-        --localstatedir=/var --disable-static
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }
