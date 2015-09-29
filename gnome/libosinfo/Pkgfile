@@ -1,6 +1,7 @@
 # Description: The Operating System information database
 # URL: http://libosinfo.org
-# Packager: fanch at nutyx dot org
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: libsoup check
 
 
