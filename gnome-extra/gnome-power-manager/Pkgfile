@@ -1,0 +1,18 @@
+# Description: System power information and statistics.
+# URL: http://www.gnome.org/
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk3 upower dconf hicolor-icon-theme
+
+
+name=gnome-power-manager
+version=3.16.0
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr --sysconfdir=/etc
+make
+make DESTDIR=$PKG install
+}
