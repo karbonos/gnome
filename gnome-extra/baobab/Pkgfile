@@ -1,8 +1,8 @@
 # Description: A graphical directory tree analyzer.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/baobab/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3, vala, yelp-xsl
+# Depends on: adwaita-icon-theme gtk3 itstool vala
 
 
 name=baobab
