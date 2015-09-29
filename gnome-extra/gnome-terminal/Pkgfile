@@ -1,8 +1,8 @@
 # Description: The GNOME Terminal Emulator.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/gnome-terminal/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: desktop-file-utils, dconf, gconf, gtk3, gnome-doc-utils, gsettings-desktop-schemas, vte3, yelp-xsl, rarian, nautilus
+# Depends on: desktop-file-utils dconf gconf gtk2 gnome-doc-utils gsettings-desktop-schemas vte3 nautilus
 
 name=gnome-terminal
 version=3.16.2
@@ -11,8 +11,10 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-./configure --prefix=/usr \
-    --disable-static --disable-migration --disable-search-provider
+./configure --prefix=/usr             \
+            --disable-static          \
+            --disable-migration       \
+            --disable-search-provider
 make
 make DESTDIR=$PKG install
 sed -e 's/System/Utility/' \
