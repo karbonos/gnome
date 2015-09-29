@@ -1,8 +1,8 @@
 # Description: Gnome icon-theme, extra icons.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/gnome-icon-theme/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: hicolor-icon-theme, gtk-update-icon-cache, icon-naming-utils, intltool
+# Depends on: gnome-icon-theme
 
 name=gnome-icon-theme-extras
 version=3.12.0
