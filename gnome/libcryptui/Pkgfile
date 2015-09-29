@@ -1,8 +1,8 @@
 # Description: Library for OpenPGP prompts.
 # URL: http://git.gnome.org/libcryptui
-# Maintainer: NuTyX Gnome team
-# Packager: piernov <piernov@piernov.org>
-# Depends on: gtk3, gpgme, dbus-glib, libnotify, libgnome-keyring, dconf, gobject-introspection, intltool
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk3 gpgme dbus-glib gnupg libnotify libgnome-keyring dconf gobject-introspection intltool
 
 name=libcryptui
 version=3.12.2
@@ -11,8 +11,8 @@ source=(http://ftp.gnome.org/pub/GNOME/sources/$name/${version%.*}/$name-$versio
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
-              --disable-static --disable-schemas-compile
+	sed -i "s@1.2 1.4 2.0@1.2 1.4 2.0 2.1@" configure
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }
