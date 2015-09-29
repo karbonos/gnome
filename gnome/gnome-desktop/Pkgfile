@@ -1,18 +1,17 @@
 # Description: Library with common API for various GNOME modules.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/gnome-gnome/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: iso-codes, xorg-app,gtk3,docbook-xml, gnome-doc-utils, gsettings-desktop-schemas, gobject-introspection, startup-notification, xorg-xkeyboard-config
+# Depends on: iso-codes itstool xorg-app gtk3 docbook-xml gnome-doc-utils gsettings-desktop-schemas gobject-introspection startup-notification xorg-xkeyboard-config
 
 name=gnome-desktop
 version=3.16.2
-release=2
+release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
-./configure --prefix=/usr \
---with-gnome-distributor="NuTyX"
+./configure --prefix=/usr 
 make
 make DESTDIR=$PKG install
 }
