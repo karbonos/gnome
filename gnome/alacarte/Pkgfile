@@ -1,9 +1,9 @@
-# Description: Editeur de menu pour GNOME, qui utilise la spécification de menu de freedesktop.org. 
+# Description: Menu editor for gnome.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/alacarte/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gnome-menus, python-gobject
-# Run on: gnome-menus,python-gobject
+# Depends on: gnome-menus python-gobject 
+
 
 name=alacarte
 version=3.11.91
