@@ -1,6 +1,6 @@
 # De'_scription: Small library for playing system sounds
 # URL: https://wiki.gnome.org/Projects/GSound
-# Packager: fanch at nutyx dot org
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: glib libcanberra
 
 name=gsound
