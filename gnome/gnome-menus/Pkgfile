@@ -1,8 +1,8 @@
 # Description: GNOME menu specifications.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/gnome-menus/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: intltool, glib, gobject-introspection
+# Depends on: intltool glib gobject-introspection
 
 name=gnome-menus
 version=3.13.3
@@ -12,7 +12,7 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$versi
 build() {
 cd $name-$version
 ./configure  --prefix=/usr --sysconfdir=/etc \
-      --localstatedir=/var  --disable-static
+      --disable-static
 make
 make DESTDIR=$PKG install
 }
