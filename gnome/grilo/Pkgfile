@@ -1,8 +1,8 @@
 # Description: Framework that provides access to various sources of multimedia content.
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/gnome-terminal/
+# Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3
+# Depends on: glib libxml2 gobject-introspection gtk3 liboauth libsoup totem-pl-parser vala
 
 name=grilo
 version=0.2.12
@@ -11,8 +11,7 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-./configure --prefix=/usr --sysconfdir=/etc --disable-static --disable-debug \
-    --libdir=/usr/lib
+./configure --prefix=/usr --libdir=/usr/lib --disable-static 
 make
 make DESTDIR=$PKG install
 }
