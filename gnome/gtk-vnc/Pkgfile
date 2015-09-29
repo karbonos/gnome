@@ -1,8 +1,8 @@
 # Description: A VNC viewer widget for GTK
 # URL: http://live.gnome.org/gtk-vnc
-# Maintainer: NuTyX Core team
-# Packager: piernov <piernov@piernov.org>
-# Depends on: gtk3, python-gtk, gnutls, pulseaudio
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk3 python-gtk gnutls pulseaudio cyrus-sasl
 
 
 name=gtk-vnc
@@ -12,10 +12,9 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 	cd $name-$version
-	PYTHON=/usr/bin/python2 ./configure --prefix=/usr \
-		--with-python \
-		--with-examples \
-		--with-gtk=3.0
+	./configure --prefix=/usr  \
+            --with-gtk=3.0 \
+            --enable-vala  
 	make
 	make DESTDIR=$PKG install
 }
