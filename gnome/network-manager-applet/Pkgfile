@@ -1,0 +1,24 @@
+# Description: Applet for managing network connections.
+# URL: http://www.gnome.org/
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk3 iso-codes gobject-introspection libsecret libgnome-keyring libnotify networkmanager polkit-gnome modemmanager
+
+
+name=network-manager-applet
+version=1.0.4
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/${name}/${version%.*}/${name}-$version.tar.xz)
+ 
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+            --sysconfdir=/etc \
+            --disable-migration \
+            --disable-static \
+      	    --disable-maintainer-mode \
+            --disable-migration \
+            --with-modem-manager-1
+make
+make DESTDIR=$PKG install
+}
