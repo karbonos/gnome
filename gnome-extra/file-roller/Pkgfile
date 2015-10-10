@@ -2,11 +2,11 @@
 # URL: http://www.gnome.org
 # Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: desktop-file-utils gtk3 hicolor-icon-theme dconf itstool libarchive file json-glib1 libnotify unrar p7zip
+# Depends on: desktop-file-utils gtk3 hicolor-icon-theme dconf itstool libarchive file json-glib libnotify unrar p7zip
 
 name=file-roller
 version=3.16.3
-release=1
+release=2
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
