@@ -34,22 +34,22 @@ It will explain you what's a collection, a git, a port, the tools around 'cards'
     logdir /var/log/pkgbuild
     EOF
 
-#### 3. Install a base NuTyX system (assume below the user is 'tnut' so adapt to yours)
+#### 3. Install a base NuTyX system (assume below the user is 'lfs' so adapt to yours)
 
-    # bash /home/tnut/houaphan/scripts/install-houaphan
+    # bash /home/lfs/houaphan/scripts/install-houaphan
 
 #### 4. In your chroot Make the directory where the git copy will comes
 
     # mkdir -v /mnt/lfs/root/{houaphan,gnome}
 
-#### 5. Mount your git project (assume below the user is 'tnut' so adapt to yours)
+#### 5. Mount your git project (assume below the user is 'lfs' so adapt to yours)
 
-    # mount -o bind /home/tnut/gnome /mnt/lfs/root/gnome
-    # mount -o bind /home/tnut/houaphan /mnt/lfs/root/houaphan
+    # mount -o bind /home/lfs/gnome /mnt/lfs/root/gnome
+    # mount -o bind /home/lfs/houaphan /mnt/lfs/root/houaphan
 
-#### 6. Enter now in your chroot
+#### 6. Enter now in your chroot (assume below the user is 'lfs' so adapt to yours)
 
-    # bash /home/tnut/houaphan/scripts/install-houaphan -ec
+    # bash /home/lfs/houaphan/scripts/install-houaphan -ec
 
 #### 7. Prepare the first execution of the build script
 
