@@ -77,7 +77,7 @@ It will explain you what's a collection, a git, a port, the tools around 'cards'
 
     # bash scripts/gnome -a
 
-#### 12. If you want to build the 'gnome-extra' collection from the sources, add the proper line in top of the cards.conf file like this:
+#### 12. If you want to build the 'gnome-extra' collection from the sources, add the proper line at the top of the cards.conf file like this:
 
     dir /houaphan/gnome-extra
 
