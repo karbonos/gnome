@@ -13,6 +13,7 @@ It will explain you what's a collection, a git, a port, the tools around 'cards'
 
     $ cd
     $ git clone git://github.com/NuTyX/gnome.git
+    $ git clone git://github.com/NuTyX/extra.git
     $ git clone git://github.com/NuTyX/houaphan.git
 
 #### 2. Become root until the end, define and create the directory used by the scripts:
@@ -26,6 +27,7 @@ It will explain you what's a collection, a git, a port, the tools around 'cards'
     # cat > /etc/install-houaphan.conf.d/cards.conf << "EOF"
     dir /houaphan/gnome
     dir /houaphan/gui
+    dir /houaphan/cli-extra
     dir /houaphan/cli
     dir /houaphan/base|http://downloads.nutyx.org
     dir /houaphan/base-extra|http://downloads.nutyx.org
@@ -40,11 +42,12 @@ It will explain you what's a collection, a git, a port, the tools around 'cards'
 
 #### 4. In your chroot Make the directory where the git copy will comes
 
-    # mkdir -v /mnt/lfs/root/{houaphan,gnome}
+    # mkdir -v /mnt/lfs/root/{houaphan,gnome,extra}
 
 #### 5. Mount your git project (assume below the user is 'lfs' so adapt to yours)
 
     # mount -o bind /home/lfs/gnome /mnt/lfs/root/gnome
+    # mount -o bind /home/lfs/gnome /mnt/lfs/root/extra
     # mount -o bind /home/lfs/houaphan /mnt/lfs/root/houaphan
 
 #### 6. Enter now in your chroot (assume below the user is 'lfs' so adapt to yours)
@@ -55,12 +58,14 @@ It will explain you what's a collection, a git, a port, the tools around 'cards'
 
     # get cards.devel wget vim rsync git tar
  
-#### 8. If everything is OK, synchronize the  houaphan 'base', 'cli' and 'gui' collections binaries
+#### 8. If everything is OK, synchronize the  houaphan 'base', 'cli', 'gui' and 'cli-extra' collections binaries
 
     # cd /root/houaphan
     # bash scripts/base -s
     # bash scripts/cli -s
     # bash scripts/gui -s
+    # cd ../extra
+    # bash scripts/cli-extra -s
     
 #### 9. If everything is OK, synchronize the 'gnome' collection binaries 
 
