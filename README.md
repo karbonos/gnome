@@ -47,7 +47,7 @@ It will explain you what's a collection, a git, a port, the tools around 'cards'
 #### 5. Mount your git project (assume below the user is 'lfs' so adapt to yours)
 
     # mount -o bind /home/lfs/gnome /mnt/lfs/root/gnome
-    # mount -o bind /home/lfs/gnome /mnt/lfs/root/extra
+    # mount -o bind /home/lfs/extra /mnt/lfs/root/extra
     # mount -o bind /home/lfs/houaphan /mnt/lfs/root/houaphan
 
 #### 6. Enter now in your chroot (assume below the user is 'lfs' so adapt to yours)
