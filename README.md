@@ -27,7 +27,6 @@ It will explain you what's a collection, a git, a port, the tools around 'cards'
     # cat > /etc/install-houaphan.conf.d/cards.conf << "EOF"
     dir /houaphan/gnome
     dir /houaphan/gui
-    dir /houaphan/cli-extra
     dir /houaphan/cli
     dir /houaphan/base|http://downloads.nutyx.org
     dir /houaphan/base-extra|http://downloads.nutyx.org
@@ -58,14 +57,14 @@ It will explain you what's a collection, a git, a port, the tools around 'cards'
 
     # get cards.devel wget vim rsync git tar
  
-#### 8. If everything is OK, synchronize the  houaphan 'base', 'cli', 'gui' and 'cli-extra' collections binaries
+#### 8. If everything is OK, synchronize the  houaphan 'base', 'cli', 'gui' and 'base-extra' collections binaries
 
     # cd /root/houaphan
     # bash scripts/base -s
     # bash scripts/cli -s
     # bash scripts/gui -s
     # cd ../extra
-    # bash scripts/cli-extra -s
+    # bash scripts/base-extra -s
     
 #### 9. If everything is OK, synchronize the 'gnome' collection binaries 
 
