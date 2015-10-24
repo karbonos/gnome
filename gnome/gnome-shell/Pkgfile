@@ -6,13 +6,18 @@
 
 run=(telepathy-logger telepathy-mission-control)
 name=gnome-shell
-version=3.16.3
-release=3
+version=3.18.1
+release=1
 
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz
+fs1.patch fs2.patch nm-libexecdir.patch)
 
 build() {
+
 cd $name-$version
+patch -Np1 -i ../fs1.patch
+patch -Np1 -i ../fs2.patch
+patch -Np1 -i ../nm-libexecdir.patch
  ./configure --prefix=/usr 
 make
 make DESTDIR=$PKG install

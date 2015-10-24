@@ -16,11 +16,11 @@ cd $name-$version
             --localstatedir=/var \
             --disable-static  \
             --without-plymouth \
-           --without-systemd \
-           --disable-schemas-compile \
-           --without-tcp-wrappers \
-           --without-console-kit
+			--without-systemd \
+			--disable-schemas-compile \
+			--without-tcp-wrappers \
+			--without-console-kit
   make
 make DESTDIR=$PKG install
-rm -r $PKG/usr/share/help
 }
+

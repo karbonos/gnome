@@ -5,7 +5,7 @@
 # Depends on: python3 
 
 name=python3-six
-version=1.7.3
+version=1.10.0
 release=1
 
 source=(

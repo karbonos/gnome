@@ -5,7 +5,7 @@
 # Depends on: gdk-pixbuf libarchive libsoup pango gcab gobject-introspection gtk3 yaml
  
 name=appstream-glib
-version=0.4.1
+version=0.5.1
 release=1
 
 source=( http://people.freedesktop.org/~hughsient/$name/releases/$name-$version.tar.xz)
