@@ -7,7 +7,7 @@ http://www.nutyx.org/fr/build-package.html
 
 It will explain you what's a collection, a git, a port, the tools around 'cards' etc
 ### Introduction
-How does this works ? This git contains the 2 "gnome" and "gnome-extra" collections. As other collections, they have to be in the right order.  The "gnome-extra" collection need the "gnome" collection.
+How does this works ? This git contains the 2 "gnome" and "gnome-extra" collections. As other collections, they have to be in the right order.  The "gnome-extra" collection need the "gnome" collection. Please note that you should use the current version of the 'base', 'cli' and 'gui' collections. The 'current' selection will be done automatically by setting the variable VERSION to current (step2). 
 
 ### How does this works:
 First we get this git and the current git localy (step1) as normal user. As we want to install a NuTyX base system in a local directory, we need to become root admin. Before installing the NuTyX in a chroot, we adjust some configuration files (step 2) so that the install-houaphan script pickup them during the installation (step 3). Once the chroot is in place, we want to make the 2 git projects visible into the chroot (step 4 and 5). Now we are ready to start, so we can enter into the chroot (step 6). As we installed a minimal set of packages, we first need to install the 'devel' packages and some extra tools (step 6 and 7). One this is done, we have 2 choices. Because all the packages of this git collections will depends on the 'current' collections (base,cli or gui) we need to synchronise them (step 8).Either we synchronise ALL the existing binaries, means we just want to update a few packages (case 1). Either we want to build ALL the binaries ourself (case 2). So Case 1, we should use option -s and for case 2 it will be -a
@@ -42,7 +42,6 @@ First we get this git and the current git localy (step1) as normal user. As we w
     EOF
  We need to have a correct pkgmk.conf file as well so, lets create it:
 
- 
     # cat > /etc/install-houaphan.conf.d/pkgmk.conf << "EOF"
     export CFLAGS="-O2 -pipe"
     export CXXFLAGS="${CFLAGS}"
@@ -90,7 +89,7 @@ First we get this git and the current git localy (step1) as normal user. As we w
 
 #### 6. Enter now in your chroot (assume below the user is 'lfs' so adapt to yours)
 
-    # bash /home/lfs/houaphan/scripts/install-houaphan -ec
+    # bash /home/lfs/current/scripts/install-houaphan -ec
 
 #### 7. Prepare the first execution of the build script
 
@@ -124,7 +123,6 @@ First we get this git and the current git localy (step1) as normal user. As we w
 dd
 
     # cd /root/gnome
-    # bash scripts/gnome-extra -s
     # bash scripts/gnome-extra -a 
 
 Have fun :)
