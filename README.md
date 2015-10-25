@@ -76,7 +76,7 @@ First we get this git and the current git localy (step1) as normal user. As we w
 
 #### 3. Install a base NuTyX system (assume below the user is 'lfs' so adapt to yours)
 
-    # bash /home/lfs/houaphan/scripts/install-houaphan
+    # bash /home/lfs/current/scripts/install-houaphan
 
 #### 4. In your chroot Make the directory where the git copy will comes
 
