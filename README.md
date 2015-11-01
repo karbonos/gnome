@@ -119,8 +119,7 @@ First we get this git and the current git localy (step1) as normal user. As we w
 
     # bash scripts/gnome -a
 
-#### 12. If you want to re build the 'gnome-extra' collection from the sources, add the proper line at the top of the cards.conf file like this:
-dd
+#### 12. If you want to re build the 'gnome-extra' collection from the sources
 
     # cd /root/gnome
     # bash scripts/gnome-extra -a 
