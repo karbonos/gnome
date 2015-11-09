@@ -1,7 +1,7 @@
 # Description: A text entry and UI navigation application (on-screen keyboard).
 # URL: http://live.gnome.org/Caribou
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Maintainer: Eitan Isaacson <eitan at monotonous dot org>
+# Packagers: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: at-spi2-atk python-atspi python-gobject gtk3 xorg-libxklavier libgee clutter dconf
 
 name=caribou
