@@ -1,7 +1,7 @@
 # Description: Use your webcam to take photos and videos, apply fancy special effects and share the fun with others. 
 # URL: http://www.gnome.org/
-# Maintainer: git.gnome.org/brownse/cheese/
-# Packager: thierryn1 at hispeed dot ch
+# Maintainer: daniel g. siegel <dgsiegel at gnome dot org>, Jaap A. Haitsma <jaap at haitsma dot org>, Filippo Argiolas <fargiolas at gnome dot org>, Yuvaraj Pandian T <yuvipanda at yuvi dot in> and Luciana Fujii Pontello <luciana at fujii dot eti dot br>
+# Packager: tnut at nutyx dot org, fanch at nutyx dot org
 # Depends on: libcanberra clutter-gst clutter-gtk gnome-desktop gnome-video-effects gstreamer1-plugins-bad gstreamer1-plugins-good itstool librsvg libgudev gobject-introspection vala
 
 name=cheese
