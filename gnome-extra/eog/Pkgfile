@@ -1,17 +1,19 @@
 # Description: Eye of Gnome: An image viewing and cataloging program.
 # URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Maintainer: Claudio Saavedra <csaavedra at gnome dot org>, Felix Riemann <friemann at gnome dot org>
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: adwaita-icon-theme desktop-file-utils gnome-desktop gnome-icon-theme libpeas shared-mime-info yelp-xsl gobject-introspection librsvg exempi lcms2 libexif
 
 name=eog
 version=3.18.0
-release=1
+release=2
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
-./configure --prefix=/usr
+./configure --prefix=/usr \
+--localstatedir=/var \
+--sysconfdir=/etc
 make
 make DESTDIR=$PKG install
 }
