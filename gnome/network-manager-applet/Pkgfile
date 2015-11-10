@@ -1,7 +1,6 @@
 # Description: Applet for managing network connections.
 # URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Packagers: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: gtk3 iso-codes gobject-introspection libsecret libgnome-keyring libnotify networkmanager polkit-gnome modemmanager
 
 
