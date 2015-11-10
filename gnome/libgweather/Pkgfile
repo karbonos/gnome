@@ -1,6 +1,6 @@
 # Description: Provides access to weather information from the net
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# URL: https://wiki.gnome.org/action/show/Projects/LibGWeather?action=show&redirect=LibGWeather
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: geocode-glib gtk3 libsoup gobject-introspection vala
 
 name=libgweather
