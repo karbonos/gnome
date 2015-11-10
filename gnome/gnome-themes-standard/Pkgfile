@@ -1,7 +1,6 @@
 # Description: Default themes for the GNOME desktop.
-# URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# URL: https://git.gnome.org/browse/gnome-themes-standard/
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: gtk2 gtk3 intltool librsvg
 
 name=gnome-themes-standard
