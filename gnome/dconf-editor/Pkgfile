@@ -1,7 +1,6 @@
-# Description:  a graphical editor for the DConf database.
+# Description: A graphical editor for the DConf database.
 # URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: dconf dbus gtk3 libxml2 libxslt vala 
 
 name=dconf-editor
