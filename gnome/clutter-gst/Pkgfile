@@ -1,7 +1,6 @@
 # Description: GStreamer bindings for clutter
 # URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Packager: tnut at nutyx dot org, fanch at nutyx dot org
 # Depends on: gtk3 clutter gstreamer1-plugins-base gobject-introspection
 
 name=clutter-gst
