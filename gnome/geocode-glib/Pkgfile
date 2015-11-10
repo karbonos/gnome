@@ -1,7 +1,7 @@
-# Description: Geocode Helper library
-# URL: http://geoclue.freedesktop.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Description: A convenience library for the geocoding (finding longitude, and latitude from an address) and reverse geocoding (finding an address from coordinates)
+# URL: https://en.wikipedia.org/wiki/Geocoding
+# Maintainer: Bastien Nocera <hadess at hadess dot net>
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: json-glib libsoup gobject-introspection gtk-doc
 
 
