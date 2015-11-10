@@ -1,7 +1,6 @@
 # Description: a VNC server for the GNOME desktop
-# Maintainer: NuTyX GNOME team
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# URL: http://www.gnome.org
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: gconf libsoup telepathy-glib desktop-file-utils libnotify
 
 
