@@ -1,6 +1,5 @@
 # Description: A GObject based library for creating fast, visually rich graphical user interfaces.
-# URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
+# URL: https://blogs.gnome.org/clutter
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: atk cogl json-glib gobject-introspection gtk3 xorg-libxi
 
