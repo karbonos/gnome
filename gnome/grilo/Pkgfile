@@ -1,7 +1,6 @@
-# Description: Framework that provides access to various sources of multimedia content.
+# Description: Framework focused on making media discovery and browsing easy for application developers.
 # URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: glib libxml2 gobject-introspection gtk3 liboauth libsoup totem-pl-parser vala
 
 name=grilo
