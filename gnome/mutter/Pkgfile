@@ -1,7 +1,6 @@
 # Description: A window manager for GNOME.
 # URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: clutter gnome-desktop libxkbcommon upower zenity gobject-introspection libcanberra startup-notification gtk-doc
 
 name=mutter
