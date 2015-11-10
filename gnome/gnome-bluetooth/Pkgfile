@@ -1,7 +1,7 @@
 # Description: The GNOME Bluetooth Subsystem.
-# URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# URL: https://wiki.gnome.org/Projects/GnomeBluetooth
+# Maintainer: 
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: itstool gtk3 gobject-introspection bluez gtk-doc libnotify libcanberra
 
 name=gnome-bluetooth
