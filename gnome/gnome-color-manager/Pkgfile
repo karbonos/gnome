@@ -1,7 +1,6 @@
 # Description: Color profile manager for the GNOME desktop
 # URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Packagers: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: colord-gtk exiv2 itstool lcms2 libcanberra libexif vte3 appstream-glib
 
 name=gnome-color-manager
