@@ -1,7 +1,6 @@
 # Description: GNOME Password Management daemon. 
 # URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: dbus gcr pam libxslt libcap-ng gnupg openssh valgrind
 
 name=gnome-keyring
