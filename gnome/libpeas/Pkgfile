@@ -1,7 +1,6 @@
 # Description: A GObject-based plugins engine.
-# URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# URL: https://wiki.gnome.org/Projects/Libpeas
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: gdb, gtk3, gjs, vala, gobject-introspection, python-gobject2, python-gobject, lua, valgrind
 
 
@@ -16,4 +15,3 @@ cd $name-$version
 make
 make DESTDIR=$PKG install
 }
-  
