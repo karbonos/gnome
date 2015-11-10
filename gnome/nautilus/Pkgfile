@@ -1,7 +1,6 @@
 # Description: GNOME file manager.
 # URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: libnotify gnome-desktop shared-mime-info gobject-introspection exempi libexif gvfs gtk-update-icon-cache desktop-file-utils
 
 name=nautilus
