@@ -1,7 +1,7 @@
 # Description: an instrumentation framework for building dynamic analysis tools. 
 # URL: http://valgrind.org
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Maintainer: http://valgrind.org/info/developers.html
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: boost llvm gdb libxslt
 
 name=valgrind
