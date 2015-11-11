@@ -1,7 +1,6 @@
 # Description: Library to aggregates people into metacontacts.
 # URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: intltool libgee libzeitgeist telepathy-glib evolution-data-server gobject-introspection vala 
 
 
