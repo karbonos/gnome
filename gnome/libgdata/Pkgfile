@@ -1,7 +1,6 @@
 # Description: GLib-based library for accessing online service APIs using the GData protocol.
 # URL: http://live.gnome.org/libgdata
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: liboauth libsoup json-glib gnome-online-accounts gcr uhttpmock gtk-doc
 
 name=libgdata
