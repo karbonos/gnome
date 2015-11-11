@@ -1,7 +1,6 @@
 # Description: GDM is a system service that is responsible for providing graphical logins and managing local and remote displays.
 # URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: tnut at nutyx dot org
+# Packager: tnut at nutyx dot org, fanch at nutyx dot org
 # Depends on: accountsservice nss libcanberra gnome-shell gnome-session upower
 
 name=gdm
