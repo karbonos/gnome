@@ -1,7 +1,7 @@
 # Description: Extensions for GNOME shell, including classic mode
 # URL: http://www.gnome.org/
 # Maintainer: git.gnome.org/brownse/gnome-shell/
-# Packager: thierryn1 at hispeed dot ch
+# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: gnome-shell, nautilus
 
 name=gnome-shell-extensions
