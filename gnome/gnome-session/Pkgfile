@@ -7,12 +7,14 @@ run=(openbox)
 
 name=gnome-session
 version=3.18.1.2
-release=1
+release=2
 
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
+source=(timeout.patch
+	http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
+patch -Np1 -i ../timeout.patch
 ./configure --prefix=/usr --docdir=/usr/share/doc/gnome-session-$version \
 --enable-consolekit \
 --enable-docbook-docs
