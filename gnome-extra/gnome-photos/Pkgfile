@@ -1,0 +1,19 @@
+# Description: Access, organize, and share your photos on GNOME.
+# URL: http://www.gnome.org/
+# Maintainer: http://linuxfromscratch.org/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:  babl exempi gegl gfbgraph gnome-desktop gnome-online-accounts grilo libgdata libexif tracker
+
+run=(intltool itstool) 
+
+name=gnome-photos
+version=3.18.2
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr 
+make
+make DESTDIR=$PKG install
+}
