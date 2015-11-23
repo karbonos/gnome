@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:  babl exempi gegl gfbgraph gnome-desktop gnome-online-accounts grilo libgdata libexif tracker
+# Depends on:  babl exempi gegl03 gfbgraph gnome-desktop gnome-online-accounts grilo libgdata libexif tracker
 
 run=(intltool itstool) 
 
