@@ -1,0 +1,23 @@
+# Description: Generic Graphics Library
+# URL: http://gegl.org/
+# Packager: pierre at nutyx dot org
+# Depends on: babl exiv2 ffmpeg gtk2 json-glib libpng librsvg librsvg lua openexr ruby
+
+name=gegl03
+_name=gegl
+version=0.3.0
+release=1
+
+source=(http://ftp.gimp.org/pub/$name/0.3/${_name}-$version.tar.bz2)
+
+build() {
+cd ${_name}-$version
+./configure --prefix=/usr --disable-docs
+LC_ALL=en_US make
+make DESTDIR=$PKG install
+install -d -v -m755 $PKG/usr/share/gtk-doc/html/gegl/images
+install -v -m644 docs/*.{css,html} \
+$PKG/usr/share/gtk-doc/html/gegl
+install -v -m644 docs/images/* \
+$PKG/usr/share/gtk-doc/html/gegl/images
+}
