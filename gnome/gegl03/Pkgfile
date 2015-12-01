@@ -6,7 +6,7 @@
 name=gegl03
 _name=gegl
 version=0.3.0
-release=1
+release=2
 
 source=(http://ftp.gimp.org/pub/$name/0.3/${_name}-$version.tar.bz2)
 
@@ -20,4 +20,6 @@ install -v -m644 docs/*.{css,html} \
 $PKG/usr/share/gtk-doc/html/gegl
 install -v -m644 docs/images/* \
 $PKG/usr/share/gtk-doc/html/gegl/images
+#Already in gegl package
+rm $PKG/usr/bin/gegl
 }
