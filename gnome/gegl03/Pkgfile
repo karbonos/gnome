@@ -5,10 +5,10 @@
 
 name=gegl03
 _name=gegl
-version=0.3.0
-release=2
+version=0.3.4
+release=1
 
-source=(http://ftp.gimp.org/pub/$name/0.3/${_name}-$version.tar.bz2)
+source=(http://ftp.gimp.org/pub/${_name}/${version%.*}/${_name}-$version.tar.bz2)
 
 build() {
 cd ${_name}-$version
