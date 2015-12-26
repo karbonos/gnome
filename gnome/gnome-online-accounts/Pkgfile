@@ -1,17 +1,21 @@
 # Description: GNOME service to access online accounts.
 # URL: http://www.gnome.org/
 # Packager: fanch at nutyx dot org, tnut at nutyx dot org
-# Depends on: gcr libgnome-keyring libnotify librest libsecret json-glib docbook-xsl gobject-introspection webkit2gtk3 telepathy-glib
+# Depends on: gcr kerberos libgnome-keyring libnotify librest libsecret json-glib docbook-xsl gobject-introspection webkit2gtk3 telepathy-glib
 
 name=gnome-online-accounts
 version=3.18.2.1
-release=1
+release=2
 
 source=(http://ftp.gnome.org/pub/gnome/sources/${name}/${version:0:4}/${name}-$version.tar.xz) 
 
 build() {
 cd $name-$version
-./configure --prefix=/usr --disable-static 
+./configure --prefix=/usr \
+--enable-media-server \
+--enable-kerberos \
+--enable-lastfm \
+--disable-static 
 make
 make -j1 DESTDIR=$PKG install
 }
