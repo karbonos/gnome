@@ -1,7 +1,7 @@
 # Description: Evolution Data Server package provides a unified backend for programs that work with contacts, tasks, and calendar information.
 # URL: http://www.gnome.org/
 # Packager: fanch at nutyx dot org, tnut at nutyx dot org
-# Depends on: db gnome-online-accounts gnome-common gperf icu libgdata libical libsecret libsoup nss libgweather vala gobject-introspection  kerberos gtk3 gtk-doc openldap
+# Depends on: vim db gnome-online-accounts gnome-common gperf icu libgdata libical libsecret libsoup nss libgweather vala gobject-introspection  kerberos gtk3 gtk-doc openldap
 
 
 name=evolution-data-server
