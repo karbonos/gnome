@@ -3,7 +3,8 @@
 # Maintainer: Richard Hughes <richard at hughsie at com>
 # Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: gdk-pixbuf libarchive libsoup pango gcab gobject-introspection gtk3 yaml
- 
+
+description="Provides GObjects and helper methods to make it easy to read and write AppStream metadata." 
 name=appstream-glib
 version=0.5.2
 release=1
