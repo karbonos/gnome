@@ -4,7 +4,7 @@
 # Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: json-glib libsoup gobject-introspection gtk-doc
 
-
+description="Finding longitude, and latitude from an address and finding an address from coordinates"
 name=geocode-glib
 version=3.18.0
 release=1
