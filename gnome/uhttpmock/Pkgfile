@@ -4,6 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: libsoup gobject-introspection vala gtk-doc
 
+description="Library for mocking web service APIs which use HTTP or HTTPS."
 name=uhttpmock
 version=0.5.0
 release=1
