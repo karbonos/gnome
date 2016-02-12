@@ -3,6 +3,7 @@
 # Packager: pierre at nutyx dot org
 # Depends on: xmlto libxslt polkit gobject-introspection vala 
 
+description="D-Bus service for accessing the list of user accounts and information attached to them."
 name=accountsservice
 version=0.6.40
 release=1
