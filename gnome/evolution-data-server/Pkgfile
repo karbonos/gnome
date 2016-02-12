@@ -3,7 +3,7 @@
 # Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: vim db gnome-online-accounts gnome-common gperf icu libgdata libical libsecret libsoup nss libgweather vala gobject-introspection  kerberos gtk3 gtk-doc openldap
 
-
+description="Unified backend for programs that work with contacts, tasks and calendar information"
 name=evolution-data-server
 version=3.18.4
 release=1
