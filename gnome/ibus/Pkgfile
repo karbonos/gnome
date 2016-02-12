@@ -4,6 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: dconf iso-codes gobject-introspection gtk2 libnotify vala python3 python-gobject  libxkbcommon dbus-python python-xdg
 
+description="Intelligent Input Bus, a new input framework for Linux OS."
 name=ibus
 version=1.5.11
 release=1
