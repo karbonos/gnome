@@ -3,6 +3,7 @@
 # Packager: tnut at nutyx dot org, fanch at nutyx dot org
 # Depends on: accountsservice nss libcanberra gnome-shell gnome-session upower
 
+description="Responsible for providing graphical logins and managing local and remote displays."
 name=gdm
 version=3.16.4
 release=1
