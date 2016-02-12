@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: polkit intltool cups
 
-
+description="PolicyKit helper used to configure Cups with fine-grained privileges."
 name=cups-pk-helper
 version=0.2.5
 release=1
