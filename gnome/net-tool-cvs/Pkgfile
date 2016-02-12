@@ -4,6 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: glibc 
 
+description="Collection of programs for controlling the network subsystem of the Linux kernel."
 name=net-tool-cvs
 version=20101030
 release=1
