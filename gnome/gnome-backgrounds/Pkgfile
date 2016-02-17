@@ -1,7 +1,7 @@
 # Description: Background images and data for GNOME
 # URL: http://www.gnome.org/
 # Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Packager: tnut at nutyx dot org
 # Depends on: intltool
 
 name=gnome-backgrounds
