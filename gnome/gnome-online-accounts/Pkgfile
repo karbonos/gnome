@@ -4,8 +4,8 @@
 # Depends on: gcr kerberos libgnome-keyring libnotify librest libsecret json-glib docbook-xsl gobject-introspection webkit2gtk3 telepathy-glib
 
 name=gnome-online-accounts
-version=3.18.2.1
-release=2
+version=3.18.4
+release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/${name}/${version:0:4}/${name}-$version.tar.xz) 
 
