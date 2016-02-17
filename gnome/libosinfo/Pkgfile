@@ -1,14 +1,14 @@
 # Description: The Operating System information database
 # URL: http://libosinfo.org
 # Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
+# Packager: tnut at nutyx dot org
 # Depends on: libsoup check
 
 
 name=libosinfo
-version=0.2.12
+version=0.3.0
 release=1
-source=(https://fedorahosted.org/releases/l/i/libosinfo/libosinfo-0.2.12.tar.gz)
+source=(https://fedorahosted.org/releases/l/i/$name/$name-$version.tar.gz)
 
 build() {
  cd $name-$version
