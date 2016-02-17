@@ -6,7 +6,7 @@
 
 description="Provides GObjects and helper methods to make it easy to read and write AppStream metadata." 
 name=appstream-glib
-version=0.5.2
+version=0.5.9
 release=1
 
 source=( http://people.freedesktop.org/~hughsient/$name/releases/$name-$version.tar.xz)
