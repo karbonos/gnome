@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/projects/totem/
 # Maintainer: NuTyX GNOME team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: grilo libpeas python-gobject gnome-icon-theme iso-codes gnome-doc-utils python-xdg clutter-gst clutter-gtk xorg-libsm libpeas python3-gobject libgdata gstreamer1-plugins-good gstreamer1-plugins-bad totem-pl-parser nautilus pylint3
+# Depends on: grilo libpeas python-gobject gnome-icon-theme iso-codes gnome-doc-utils python-xdg clutter-gst clutter-gtk xorg-libsm libpeas python-gobject libgdata gstreamer1-plugins-good gstreamer1-plugins-bad totem-pl-parser nautilus pylint3
 
 name=totem
 version=3.18.1
