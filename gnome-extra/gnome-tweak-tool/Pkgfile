@@ -2,7 +2,7 @@
 # URL: https://live.gnome.org/GnomeTweakTool
 # Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3 gsettings-desktop-schemas gconf python-gobject python3-gobject
+# Depends on: gtk3 gsettings-desktop-schemas gconf python-gobject python-gobject
 
 run=(gsettings-desktop-schemas)
 
