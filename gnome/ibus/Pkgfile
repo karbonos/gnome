@@ -1,14 +1,13 @@
-# Description: IBus is an Intelligent Input Bus. It is a new input framework for Linux OS. It provides full featured and user friendly input method user interface.
+# Description: IBus is an Intelligent Input Bus.
 # URL: http://ibus.googlecode.com
 # Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: dconf iso-codes gobject-introspection gtk2 libnotify vala python3 python-gobject  libxkbcommon dbus-python python-xdg
 
-description="Intelligent Input Bus, a new input framework for Linux OS."
 name=ibus
-version=1.5.12
+version=1.5.13
 release=1
-
+           
 source=(https://github.com/ibus/ibus/releases/download/$version/$name-$version.tar.gz)
 build() {
 cd $name-$version

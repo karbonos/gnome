@@ -4,11 +4,11 @@
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: polkit intltool cups
 
-description="PolicyKit helper used to configure Cups with fine-grained privileges."
+
 name=cups-pk-helper
 version=0.2.6
 release=1
-source=( http://www.freedesktop.org/software/$name/releases/$name-$version.tar.xz)
+source=(http://www.freedesktop.org/software/$name/releases/$name-$version.tar.xz)
 
 build() {
 cd $name-$version

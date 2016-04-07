@@ -1,12 +1,11 @@
-# Description: The Appstream-GLib package contains a library that provides GObjects and helper methods to make it easy to read and write AppStream metadata. 
+# Description: Library to read and write AppStream metadata. 
 # URL: http://people.freedesktop.org/~hughsient/appstream-glib/
 # Maintainer: Richard Hughes <richard at hughsie at com>
 # Packager: fanch at nutyx dot org, tnut at nutyx dot org
-# Depends on: gdk-pixbuf libarchive libsoup pango gcab gobject-introspection gtk3 yaml
-
-description="Provides GObjects and helper methods to make it easy to read and write AppStream metadata." 
+# Depends on: gdk-pixbuf json-glib libarchive libsoup pango gcab gobject-introspection gtk3 yaml
+ 
 name=appstream-glib
-version=0.5.9
+version=0.5.11
 release=1
 
 source=( http://people.freedesktop.org/~hughsient/$name/releases/$name-$version.tar.xz)

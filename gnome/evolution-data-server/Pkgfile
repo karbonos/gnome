@@ -1,12 +1,12 @@
-# Description: Evolution Data Server package provides a unified backend for programs that work with contacts, tasks, and calendar information.
+# Description: Programs that work with contacts, tasks, and calendar information.
 # URL: http://www.gnome.org/
 # Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: vim db gnome-online-accounts gnome-common gperf icu libgdata libical libsecret libsoup nss libgweather vala gobject-introspection  kerberos gtk3 gtk-doc openldap
 
-description="Unified backend for programs that work with contacts, tasks and calendar information"
+
 name=evolution-data-server
-version=3.18.5
-release=2
+version=3.20.0
+release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
@@ -16,7 +16,7 @@ cd $name-$version
       --localstatedir=/var --with-openldap=yes \
       --with-krb5=/usr --with-libdb=/usr \
       --enable-vala-bindings --disable-uoa \
-      --enable-gtk-doc 
+      --enable-gtk-doc --disable-google-auth
 make
 make DESTDIR=$PKG install
 }

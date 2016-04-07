@@ -4,9 +4,8 @@
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: glib gobject-introspection intltool vala 
 
-description="Program and a library used to create Microsoft cabinet (.cab) archives."
 name=gcab
-version=0.6
+version=0.7
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version}/$name-$version.tar.xz)
 
