@@ -1,7 +1,7 @@
 # Description: Generic Graphics Library
 # URL: http://gegl.org/
 # Packager: pierre at nutyx dot org
-# Depends on: babl exiv2 ffmpeg gtk2 json-glib libpng librsvg librsvg lua openexr ruby
+# Depends on: git babl exiv2 ffmpeg gtk2 json-glib libpng librsvg librsvg lua openexr ruby
 
 name=gegl03
 _name=gegl
