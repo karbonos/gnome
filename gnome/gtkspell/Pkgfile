@@ -4,7 +4,6 @@
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: gtk3, enchant
 
-description="Provides word-processor-style highlighting and replacement of misspelled words"
 name=gtkspell
 _name=gtkspell3
 version=3.0.7

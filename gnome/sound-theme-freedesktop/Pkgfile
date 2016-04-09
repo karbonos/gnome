@@ -8,7 +8,7 @@
 name=sound-theme-freedesktop
 version=0.8
 release=1
-source=( http://people.freedesktop.org/~mccann/dist/$name-$version.tar.bz2)
+source=(http://people.freedesktop.org/~mccann/dist/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version

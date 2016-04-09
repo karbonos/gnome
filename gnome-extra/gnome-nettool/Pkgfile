@@ -1,10 +1,9 @@
-# Description: a network information tool which provides GUI interface for some of the most common command line network tools.
+# Description: GUI interface for some of the most common command line network tools.
 # URL: http://www.gnome.org/
 # Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: gtk3 itstool libgtop vala bind nmap traceroute net-tool-cvs whois
 
-description="GUI interface to some of the most common command line network tools."
 name=gnome-nettool
 version=3.8.1
 release=1

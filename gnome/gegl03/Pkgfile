@@ -5,14 +5,27 @@
 
 name=gegl03
 _name=gegl
-version=0.3.0
-release=3
+version=0.3.5
+release=1
 
-source=(http://ftp.gimp.org/pub/${_name}/${version%.*}/${_name}-$version.tar.bz2)
+source=()
+_gitroot=git://github.com/GNOME/gegl.git
+_gitname=gegl
 
 build() {
-cd ${_name}-$version
-./configure --prefix=/usr --disable-docs
+	cd $SRC
+	
+	if [[ -d $_gitname ]]; then
+		cd $_gitname && git pull origin
+	else
+		git clone $_gitroot $_gitname
+	fi
+
+
+	rm -rf $SRC/$_gitname-build
+	git clone $SRC/$_gitname $SRC/$_gitname-build
+	cd $SRC/$_gitname-build
+./autogen.sh --prefix=/usr --disable-docs
 LC_ALL=en_US make
 make DESTDIR=$PKG install
 install -d -v -m755 $PKG/usr/share/gtk-doc/html/gegl/images

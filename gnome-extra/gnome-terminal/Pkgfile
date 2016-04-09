@@ -2,12 +2,12 @@
 # URL: http://www.gnome.org/
 # Maintainer: http://linuxfromscratch.org/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: desktop-file-utils dconf gconf gtk2 gnome-doc-utils gsettings-desktop-schemas vte3 nautilus
+# Depends on: desktop-file-utils dconf gconf gtk2 gnome-doc-utils gsettings-desktop-schemas vte3 nautilus 
 
 run=(gsettings-desktop-schemas)
 
 name=gnome-terminal
-version=3.18.2
+version=3.20.0
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
@@ -16,9 +16,9 @@ cd $name-$version
 ./configure --prefix=/usr             \
             --disable-static          \
             --disable-migration       \
-            --disable-search-provider
+            --disable-search-provider \
+            --without-pcre2 --with-nautilus-extension
 make
 make DESTDIR=$PKG install
-sed -e 's/System/Utility/' \
-    -i $PKG/usr/share/applications/gnome-terminal.desktop
+
 }
