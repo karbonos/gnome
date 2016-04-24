@@ -5,10 +5,10 @@
 # Depends on: gdk-pixbuf json-glib libarchive libsoup pango gcab gobject-introspection gtk3 yaml
  
 name=appstream-glib
-version=0.5.11
+version=0.5.12
 release=1
 
-source=( http://people.freedesktop.org/~hughsient/$name/releases/$name-$version.tar.xz)
+source=(http://people.freedesktop.org/~hughsient/$name/releases/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
