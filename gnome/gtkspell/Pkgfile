@@ -6,7 +6,7 @@
 
 name=gtkspell
 _name=gtkspell3
-version=3.0.7
+version=3.0.8
 release=1
 source=(http://gtkspell.sourceforge.net/download/${_name}-$version.tar.gz)
 
