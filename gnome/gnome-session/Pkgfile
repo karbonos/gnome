@@ -6,7 +6,7 @@
 run=(openbox)
 
 name=gnome-session
-version=3.19.92
+version=3.20.1
 release=1
 
 source=(timeout.patch
