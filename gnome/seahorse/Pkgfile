@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX GNOME team
 # Packager: piernov <piernov@piernov.org>
-# Depends on: avahi gpgme gcr gnome-keyring gnupg itstool libsecret libsoup openssh openldap vala
+# Depends on: gcr gnome-keyring gnupg gpgme gtk3 intltool libsoup nss vala
 
 name=seahorse
 version=3.20.0
