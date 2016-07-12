@@ -1,12 +1,11 @@
-# Description: The Gnome Session Handler
-# URL: http://www.gnome.org/
-# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: openbox xorg-libsm gconf gtk3 json-glib startup-notification upower xmlto consolekit2 gnome-desktop
 
 run=(openbox)
-
+url="http://www.gnome.org/"
+description="The Gnome Session Handler"
+packager="fanch at nutyx dot org, tnut at nutyx dot org"
 name=gnome-session
-version=3.20.1
+version=3.20.2
 release=1
 
 source=(timeout.patch
