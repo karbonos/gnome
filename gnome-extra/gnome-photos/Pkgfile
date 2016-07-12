@@ -1,13 +1,11 @@
-# Description: Access, organize, and share your photos on GNOME.
-# URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
-# Depends on:  babl exempi gegl03 gfbgraph gnome-desktop gnome-online-accounts grilo libgdata libexif tracker libgexiv2
+# Depends on:  babl exempi gegl gfbgraph gnome-desktop gnome-online-accounts grilo libgdata libexif tracker libgexiv2
 
 run=(intltool itstool) 
-
+url="http://www.gnome.org"
+packager="tnut at nutyx dot org"
+description="Access, organize, and share your photos on GNOME."
 name=gnome-photos
-version=3.20.1
+version=3.20.2
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
