@@ -1,10 +1,10 @@
-# Description: A window manager for GNOME.
-# URL: http://www.gnome.org/
-# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: clutter gnome-desktop libxkbcommon upower zenity gobject-introspection libcanberra startup-notification gtk-doc
 
+description="A window manager for GNOME"
+url="http://www.gnome.org/"
+packager="fanch at nutyx dot org, tnut at nutyx dot org"
 name=mutter
-version=3.20.1
+version=3.20.3
 release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
