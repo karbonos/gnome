@@ -17,7 +17,6 @@ First we get this git and the core git localy (step1) as normal user. As we want
 
     $ cd
     $ git clone git://github.com/NuTyX/gnome.git
-    $ git clone git://github.com/NuTyX/extra.git
     $ git clone git://github.com/NuTyX/core.git
 
 #### 2. Become root until the end, define and create the directory used by the scripts:
@@ -26,7 +25,7 @@ First we get this git and the core git localy (step1) as normal user. As we want
 
     $ su -
     # echo "LFS=/mnt/lfs
-    VERSION=current
+    VERSION=development
     DEPOT=/DEPOT" > /etc/install-nutyx.conf
     # mkdir -p /etc/install-nutyx.conf.d
     # cat > /etc/install-nutyx.conf.d/cards.conf << "EOF"
@@ -78,12 +77,11 @@ First we get this git and the core git localy (step1) as normal user. As we want
 
 #### 4. In your chroot Make the directory where the git copy will comes
 
-    # mkdir -v /mnt/lfs/root/{core,extra,gnome}
+    # mkdir -v /mnt/lfs/root/{core,gnome}
 
 #### 5. Mount your git project (assume below the user is 'lfs' so adapt to yours)
 
     # mount -o bind /home/lfs/gnome /mnt/lfs/root/gnome
-    # mount -o bind /home/lfs/extra /mnt/lfs/root/extra
     # mount -o bind /home/lfs/core /mnt/lfs/root/core
 
 #### 6. Enter now in your chroot (assume below the user is 'lfs' so adapt to yours)
@@ -100,8 +98,6 @@ First we get this git and the core git localy (step1) as normal user. As we want
     # bash scripts/base -s
     # bash scripts/cli -s
     # bash scripts/gui -s
-    # cd ../extra
-    # bash scripts/base-extra -s
     
 #### 9. If everything is OK, synchronize the 'gnome' collection binaries in case of a few updates
 
