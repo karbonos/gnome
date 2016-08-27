@@ -4,7 +4,7 @@
 # Depends on: hicolor-icon-theme gtk3 libcanberra librsvg
 
 name=four-in-a-row
-version=3.20.0
+version=3.20.1
 release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
