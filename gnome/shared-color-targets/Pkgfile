@@ -1,10 +1,9 @@
 # Description: Shared color targets for creating color profiles.
 # URL: http://www.gnome.org
 # Packager: fanch at orange dot org
-# Depends on: 
 
 name=shared-color-targets
-version=0.1.5
+version=0.1.7
 release=1
 source=(http://people.freedesktop.org/~hughsient/releases/$name-$version.tar.xz)
 
