@@ -5,7 +5,7 @@ url="http://www.gnome.org"
 packager="tnut at nutyx dot org"
 description="Access, organize, and share your photos on GNOME."
 name=gnome-photos
-version=3.20.2
+version=3.20.3
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
