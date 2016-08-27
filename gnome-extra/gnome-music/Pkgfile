@@ -7,7 +7,7 @@
 run=(intltool itstool python gobject-introspection) 
 
 name=gnome-music
-version=3.20.0
+version=3.20.2
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
  
