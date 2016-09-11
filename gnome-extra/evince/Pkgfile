@@ -1,14 +1,13 @@
-# Description: Pdf, Postscript, DjVu, Tiff, DVI documents viewer.
-# URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: tnut at nutyx dot org
-# Depends on: adwaita-icon-theme gtk3 gnome-icon-theme gsettings-desktop-schemas itstool yelp-xsl gobject-introspection libgnome-keyring nautilus poppler-glib
+# Depends on: adwaita-icon-theme gtk3 gnome-icon-theme itstool yelp-xsl gobject-introspection libgnome-keyring nautilus poppler-glib gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
 
-run=(gsettings-desktop-schemas)
+description="Pdf, Postscript, DjVu, Tiff, DVI documents viewer."
+url="http://gnome.org"
+packager="thierryn1 at hispeed dot ch"
+run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=evince
 version=3.20.1
-release=1
+release=3
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
