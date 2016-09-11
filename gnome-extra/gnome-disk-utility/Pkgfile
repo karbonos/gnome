@@ -1,12 +1,14 @@
-# Description: Disk Management Utility for GNOME.
-# URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
-# Depends on: libcanberra libdvdread gnome-settings-daemon librsvg gtk3 intltool libsecret libpwquality udisks2 xorg-libxinerama xorg-app
+# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  libcanberra libdvdread gnome-settings-daemon librsvg gtk3 intltool libsecret libpwquality udisks2 xorg-libxinerama xorg-app
+
+description="Disk Management Utility for GNOME."
+url="http://www.gnome.org/"
+packager="thierryn1 at hispeed dot ch"
+run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-disk-utility
 version=3.20.2
-release=1
+release=3
+
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
