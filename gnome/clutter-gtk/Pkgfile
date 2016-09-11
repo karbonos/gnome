@@ -1,12 +1,12 @@
-# Description: GTK clutter widget. 
-# URL: http://www.clutter-project.org
-# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: clutter gtk3 gobject-introspection
 
+description="GTK clutter widget." 
+url="http://www.clutter-project.org"
+packager="fanch at nutyx dot org, tnut at nutyx dot org"
 
 name=clutter-gtk
 version=1.8.0
-release=1
+release=2
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
