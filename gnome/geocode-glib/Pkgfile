@@ -1,13 +1,13 @@
-# Description: A convenience library for the geocoding and reverse geocoding.
-# URL: https://en.wikipedia.org/wiki/Geocoding
-# Maintainer: Bastien Nocera <hadess at hadess dot net>
-# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: json-glib libsoup gobject-introspection gtk-doc
 
+description="A convenience library for the geocoding and reverse geocoding."
+url="https://en.wikipedia.org/wiki/Geocoding"
+maintainer="Bastien Nocera <hadess at hadess dot net>"
+packager="fanch at nutyx dot org, tnut at nutyx dot org"
 
 name=geocode-glib
 version=3.20.1
-release=1
+release=2
 
 source=(http://ftp.gnome.org/pub/GNOME/sources/$name/${version%.*}/$name-$version.tar.xz)
 
