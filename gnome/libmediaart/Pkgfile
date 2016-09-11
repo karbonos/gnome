@@ -1,13 +1,14 @@
-# Description: Library tasked with managing, extracting and handling media art caches
-# URL: https://github.com/curlybeast/libmediaart
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
 # Depends on: gdk-pixbuf
 
+description="Library tasked with managing, extracting and handling media art caches"
+url="https://github.com/curlybeast/libmediaart"
+maintainer="http://linuxfromscratch.org/"
+packager="thierryn1 at hispeed dot ch"
 
 name=libmediaart
 version=1.9.0
-release=1
+release=2
+
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:3}/$name-$version.tar.xz)
 
 build() {
