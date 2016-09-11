@@ -1,19 +1,17 @@
-# Description: Common macros pour GNOME 3 (GIT Version)
-# URL: http://www.gnome.org
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
-# Depends on: 
- 
+description="Common macros pour GNOME 3 (GIT Version)"
+url="http://www.gnome.org"
+maintainer="http://linuxfromscratch.org/"
+packager="thierryn1 at hispeed dot ch"
 
 name=gnome-common
 version=3.18.0
-release=1
+release=2
+
 source=(http://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
 build() {
-	cd $name-$version
-./configure --prefix=/usr
+  cd $name-$version
+  ./configure --prefix=/usr
   make
-	make  DESTDIR=$PKG/ install
-
+  make  DESTDIR=$PKG/ install
 }
