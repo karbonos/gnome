@@ -1,14 +1,14 @@
-# Description: Music player and management application.
-# URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
-# Depends on: gobject-introspection grilo gtk3 intltool itstool libmediaart python python3 tracker
+# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gobject-introspection grilo gtk3 intltool itstool libmediaart python python3 tracker
 
-run=(intltool itstool python gobject-introspection) 
+description="Music player and management application."
+url="http://www.gnome.org/"
+packager="thierryn1 at hispeed dot ch"
+run=(intltool itstool python gobject-introspection gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-music
 version=3.20.2
-release=1
+release=3
+
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
  
 build() {
