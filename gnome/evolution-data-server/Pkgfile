@@ -1,12 +1,12 @@
-# Description: Programs that work with contacts, tasks, and calendar information.
-# URL: http://www.gnome.org/
-# Packager: fanch at nutyx dot org, tnut at nutyx dot org
 # Depends on: vim db gnome-online-accounts gnome-common gperf icu libgdata libical libsecret libsoup nss libgweather vala gobject-introspection  kerberos gtk3 gtk-doc openldap
 
+description="Programs that work with contacts, tasks, and calendar information."
+url="http://www.gnome.org/"
+packager="fanch at nutyx dot org, tnut at nutyx dot org"
 
 name=evolution-data-server
 version=3.20.5
-release=1
+release=2
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
