@@ -1,12 +1,12 @@
-# Description: GObject-based wrapper around the Exiv2 library.
-# URL: https://wiki.gnome.org/Projects/gexiv2
-# Packager: nutyx core team
-# Depends on: glib exiv2 gobject-introspection python-gobject python-gobject2
+# Depends on: glib exiv2 gobject-introspection python-gobject
 
+description="GObject-based wrapper around the Exiv2 library."
+url="https://wiki.gnome.org/Projects/gexiv2"
+packager="nutyx core team"
 
 name=libgexiv2
 version=0.10.4
-release=1
+release=5
 
 source=(http://ftp.gnome.org/pub/gnome/sources/${name/lib/}/${version%.*}/${name/lib/}-$version.tar.xz)
 
