@@ -1,11 +1,14 @@
-# Description: Fit falling blocks together (Tetris-like game for GNOME)
-# URL: https://live.gnome.org/Quadrapassel
-# Packager:
-# Depends on:  intltool itstool gobject-introspection desktop-file-utils hicolor-icon-theme clutter-gtk libcanberra librsvg
+# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache intltool itstool gobject-introspection desktop-file-utils hicolor-icon-theme clutter-gtk libcanberra librsvg
+
+description="Fit falling blocks together (Tetris-like game for GNOME)"
+url="https://live.gnome.org/Quadrapassel"
+packager="thierryn1 at hispeed dot ch"
+run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=quadrapassel
 version=3.20.0
-release=1
+release=2
+
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
 build() {
