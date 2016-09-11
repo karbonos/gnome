@@ -1,13 +1,14 @@
-# Description: Gucharmap is a Unicode character map and font viewer.
-# URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
-# Depends on: desktop-file-utils gtk3 itstool gobject-introspection vala
+# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  gtk3 itstool gobject-introspection vala
 
+description="Gucharmap is a Unicode character map and font viewer."
+url="http://www.gnome.org/"
+packager="thierryn1 at hispeed dot ch"
+run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gucharmap
 version=8.0.1
-release=1
+release=2
+
 source=(http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
