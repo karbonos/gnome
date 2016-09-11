@@ -1,12 +1,14 @@
-# Description: Outlook .pst file converter.
-# URL: http://www.five-ten-sg.com/libpst/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
 # Depends on: python boost libgsf
+
+description="Outlook .pst file converter."
+url="http://www.five-ten-sg.com/libpst/"
+maintainer="http://linuxfromscratch.org/"
+packager="thierryn1 at hispeed dot ch"
 
 name=libpst
 version=0.6.66
-release=1
+release=2
+
 source=(http://www.five-ten-sg.com/libpst/packages/${name}-${version}.tar.gz)
 
 build() {
