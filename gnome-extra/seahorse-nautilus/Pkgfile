@@ -1,12 +1,14 @@
-# Description: PGP encryption and signing for nautilus.
-# URL: http://www.gnome.org/
-# Maintainer: http://linuxfromscratch.org/
-# Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk3 libcryptui dbus-glib gnome-keyring gconf gnupg gpgme nautilus libnotify seahorse
+# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  gtk3 libcryptui dbus-glib gnome-keyring gconf gnupg gpgme nautilus libnotify seahorse
+
+description="PGP encryption and signing for nautilus."
+url="http://www.gnome.org/"
+packager="thierryn1 at hispeed dot ch"
+run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=seahorse-nautilus
 version=3.11.92
-release=1
+release=2
+
 source=(http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
